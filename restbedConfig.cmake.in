@@ -13,6 +13,6 @@ get_filename_component(RestBed_CMAKE_DIR "${CMAKE_CURRENT_LIST_FILE}" PATH)
 set( RestBed_INCLUDE_DIR  "@RestBed_INCLUDE_DIR@" )
 set( RestBed_INCLUDE_DIRS  "@RestBed_INCLUDE_DIR@" )
 
-link_directories("@DeepInspect_LINK_DIRS_STATIC@" "@DeepInspect_LINK_DIRS_DYNAMIC@")
+link_directories("@RestBed_LINK_DIRS_STATIC@" "@RestBed_LINK_DIRS_DYNAMIC@")
 set( RestBed_LIBS optimized "@RestBed_LIBRARIES_RELEASE@" debug "@RestBed_LIBRARIES_DEBUG@")
 message(STATUS "RestBed found. Headers: ${RestBed_INCLUDE_DIRS}")
